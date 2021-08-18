@@ -360,7 +360,7 @@ demo = {
     var data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
       datasets: [{
-        label: "Data",
+        label: "Updated Data",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#d048b6',
@@ -374,7 +374,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
+        data: [20, 50, 35, 60, 85, 60],
       }]
     };
 
@@ -396,7 +396,7 @@ demo = {
     var data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
       datasets: [{
-        label: "My First dataset",
+        label: "My Changed dataset",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#00d6b4',
@@ -410,7 +410,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [90, 27, 60, 12, 80],
+        data: [27, 90, 12, 100, 60],
       }]
     };
 
@@ -424,7 +424,7 @@ demo = {
 
 
     var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    var chart_data = [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100];
+    var chart_data = [30, 100, 75, 45, 85, 50, 70, 55, 95, 100, 80, 100];
 
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
@@ -439,7 +439,7 @@ demo = {
       data: {
         labels: chart_labels,
         datasets: [{
-          label: "My First dataset",
+          label: "My Changed dataset",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: '#d346b1',
@@ -484,11 +484,11 @@ demo = {
 
     var ctx = document.getElementById("CountryChart").getContext("2d");
 
-    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    var gradientStroke = ctx.createLinearGradient(230, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
-    gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(29,140,248,0)'); //blue colors
+    gradientStroke.addColorStop(0, 'rgba(31,142,241,0.8)');
+    gradientStroke.addColorStop(0, 'rgba(31,142,241,0.8)');
+    gradientStroke.addColorStop(0, 'rgba(31,142,241,0.8)'); //blue colors
 
 
     var myChart = new Chart(ctx, {
@@ -508,7 +508,7 @@ demo = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [2000, 680, 900, 1800, 555, 600],
         }]
       },
       options: gradientBarChartConfiguration

@@ -18,6 +18,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 # The configuration
 get_config_mode = 'Debug' if DEBUG else 'Production'
 
+#CNTR + F5
 try:
     
     # Load the configuration using the default values 
